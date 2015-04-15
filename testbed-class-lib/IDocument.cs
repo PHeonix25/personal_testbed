@@ -1,4 +1,4 @@
-﻿namespace testbed_class_lib
+﻿namespace SampleRavenRepository
 {
     public interface IDocument<TIdentifierType>
     {

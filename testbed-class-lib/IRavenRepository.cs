@@ -1,15 +1,19 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace testbed_class_lib
+namespace SampleRavenRepository
 {
-    public interface IRavenRepository<TDocument, in TIdentifierType> 
+    internal interface IRavenRepository<TDocument, in TIdentifierType>
         where TDocument : class, IDocument<TIdentifierType>
     {
         TDocument Get(TIdentifierType id);
         IEnumerable<TDocument> GetAll();
 
-        TDocument Set(TDocument value);
-        bool SetAll(IEnumerable<TDocument> documents); 
+        TDocument Create(TDocument document);
+        bool CreateAll(IEnumerable<TDocument> documents);
+
+        TDocument Update(TDocument document);
+        bool UpdateAll(IEnumerable<TDocument> documents);
 
         bool Delete(TIdentifierType id);
     }

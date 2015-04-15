@@ -1,11 +1,12 @@
 ﻿
-using testbed_class_lib;
+using SampleRavenRepository;
 
-namespace Nomnomnom
+namespace SampleRavenRepositoryConsumer
 {
     public class SampleDocument : IDocument<int>
     {
         public int Id { get; set; }
-        public string Value { get; set; }
+        public string Property1 { get; set; }
+        public string Property2 { get; set; }
     }
 }

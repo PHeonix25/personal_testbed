@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testbed-class-lib", "testbed-class-lib\testbed-class-lib.csproj", "{BCEA2556-3D5B-49DB-8F78-6A4087B34173}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRavenRepository", "testbed-class-lib\SampleRavenRepository.csproj", "{BCEA2556-3D5B-49DB-8F78-6A4087B34173}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nomnomnom", "Nomnomnom\Nomnomnom.csproj", "{F9C36A1C-2FC7-442B-BA75-52D3DFD2E0A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleRavenRepositoryConsumer", "Nomnomnom\SampleRavenRepositoryConsumer.csproj", "{F9C36A1C-2FC7-442B-BA75-52D3DFD2E0A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
