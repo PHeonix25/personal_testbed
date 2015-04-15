@@ -20,7 +20,7 @@ namespace SampleRavenRepositoryConsumer
         {
             var ravenRepository = new RavenRepository<SampleDocument>();
 
-            var document = new SampleDocument { Property1 = "1", Property2 = "2" };
+            var document = new SampleDocument {Property1 = "1", Property2 = "2"};
 
             document = ravenRepository.Create(document);
 

@@ -8,7 +8,7 @@ using Raven.Client.Embedded;
 
 namespace SampleRavenRepository
 {
-    public class RavenRepository<TDocumentType> 
+    public class RavenRepository<TDocumentType>
         : IRavenRepository<TDocumentType, int>
         where TDocumentType : class, IDocument<int>
     {
@@ -132,7 +132,9 @@ namespace SampleRavenRepository
             using(IDocumentSession session = _documentStore.OpenSession())
             {
                 var query =
-                    session.Query<TDocumentType>().Skip(documents.Count).Take(RavenDbConstants.DEFAULT_BATCHING_BATCH_SIZE);
+                    session.Query<TDocumentType>()
+                           .Skip(documents.Count)
+                           .Take(RavenDbConstants.DEFAULT_BATCHING_BATCH_SIZE);
                 while(query.Any())
                     documents.AddRange(query.ToList());
             }
