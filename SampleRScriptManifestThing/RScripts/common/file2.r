@@ -1,0 +1,1 @@
+﻿This string is from File 2
